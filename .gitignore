@@ -1,0 +1,12 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/School-Management-System/.vs/SMS
+/School-Management-System/Application/bin/Debug/net8.0
+/School-Management-System/Domain/bin/Debug/net8.0
+/School-Management-System/Application/obj/Debug/net8.0
+/School-Management-System/Infrastructure/bin/Debug/net8.0
+/School-Management-System/Infrastructure/obj/Debug/net8.0
+/School-Management-System/WebApi/bin/Debug/net8.0
+/School-Management-System/WebApi/obj/Debug/net8.0
