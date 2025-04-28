@@ -18,8 +18,6 @@ namespace Domain
         public string Email { get; set; }
         public string FatherName { get; set; }
         public string MotherName { get; set; }
-        public ClassRoom ClassRoom { get; set; }
-        public Guid ClassId { get; set; }
-        public ICollection<Course> Courses { get; set; } 
+        public ICollection<ClassRoom> ClassRooms { get; set; }
     }
 }

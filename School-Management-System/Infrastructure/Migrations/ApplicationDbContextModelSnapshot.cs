@@ -22,19 +22,19 @@ namespace Infrastructure.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("CourseStudent", b =>
+            modelBuilder.Entity("ClassRoomTeacher", b =>
                 {
-                    b.Property<Guid>("CoursesId")
+                    b.Property<Guid>("ClassRoomsId")
                         .HasColumnType("uuid");
 
-                    b.Property<Guid>("StudentsId")
+                    b.Property<Guid>("TeachersId")
                         .HasColumnType("uuid");
 
-                    b.HasKey("CoursesId", "StudentsId");
+                    b.HasKey("ClassRoomsId", "TeachersId");
 
-                    b.HasIndex("StudentsId");
+                    b.HasIndex("TeachersId");
 
-                    b.ToTable("CourseStudent");
+                    b.ToTable("ClassRoomTeacher");
                 });
 
             modelBuilder.Entity("Domain.ClassRoom", b =>
@@ -86,9 +86,6 @@ namespace Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<Guid>("GradeId")
-                        .HasColumnType("uuid");
-
                     b.Property<DateTime>("ModifiedDate")
                         .HasColumnType("timestamp with time zone");
 
@@ -96,14 +93,9 @@ namespace Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<Guid>("TeacherId")
-                        .HasColumnType("uuid");
-
                     b.HasKey("Id");
 
                     b.HasIndex("ClassRoomId");
-
-                    b.HasIndex("TeacherId");
 
                     b.ToTable("Courses");
                 });
@@ -142,9 +134,6 @@ namespace Infrastructure.Migrations
                     b.Property<int>("Gender")
                         .HasColumnType("integer");
 
-                    b.Property<Guid>("GradeId")
-                        .HasColumnType("uuid");
-
                     b.Property<string>("GrandFatherName")
                         .IsRequired()
                         .HasColumnType("text");
@@ -179,12 +168,6 @@ namespace Infrastructure.Migrations
 
                     b.Property<int>("Age")
                         .HasColumnType("integer");
-
-                    b.Property<Guid>("ClassId")
-                        .HasColumnType("uuid");
-
-                    b.Property<Guid>("ClassRoomId")
-                        .HasColumnType("uuid");
 
                     b.Property<string>("ContactNumber")
                         .IsRequired()
@@ -221,22 +204,20 @@ namespace Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ClassRoomId");
-
                     b.ToTable("Teachers");
                 });
 
-            modelBuilder.Entity("CourseStudent", b =>
+            modelBuilder.Entity("ClassRoomTeacher", b =>
                 {
-                    b.HasOne("Domain.Course", null)
+                    b.HasOne("Domain.ClassRoom", null)
                         .WithMany()
-                        .HasForeignKey("CoursesId")
+                        .HasForeignKey("ClassRoomsId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Domain.Student", null)
+                    b.HasOne("Domain.Teacher", null)
                         .WithMany()
-                        .HasForeignKey("StudentsId")
+                        .HasForeignKey("TeachersId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
@@ -249,15 +230,7 @@ namespace Infrastructure.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Domain.Teacher", "Teacher")
-                        .WithMany("Courses")
-                        .HasForeignKey("TeacherId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.Navigation("ClassRoom");
-
-                    b.Navigation("Teacher");
                 });
 
             modelBuilder.Entity("Domain.Student", b =>
@@ -271,29 +244,11 @@ namespace Infrastructure.Migrations
                     b.Navigation("ClassRoom");
                 });
 
-            modelBuilder.Entity("Domain.Teacher", b =>
-                {
-                    b.HasOne("Domain.ClassRoom", "ClassRoom")
-                        .WithMany("Teachers")
-                        .HasForeignKey("ClassRoomId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("ClassRoom");
-                });
-
             modelBuilder.Entity("Domain.ClassRoom", b =>
                 {
                     b.Navigation("Courses");
 
                     b.Navigation("Students");
-
-                    b.Navigation("Teachers");
-                });
-
-            modelBuilder.Entity("Domain.Teacher", b =>
-                {
-                    b.Navigation("Courses");
                 });
 #pragma warning restore 612, 618
         }

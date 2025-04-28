@@ -1,15 +1,16 @@
 ﻿using Application.ClassRooms.Command.CreateClassRoom;
 using Application.Common.Interfaces;
+using Application.Students.Command.CreateStudent;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ClassRoomController : ApiBaseController
+    public class StudentController:ApiBaseController
     {
         private readonly IApplicationDbContext _context;
-        public ClassRoomController(IApplicationDbContext context)
+        public StudentController(IApplicationDbContext context)
         {
             _context = context;
         }
@@ -27,7 +28,7 @@ namespace WebApi.Controllers
         }
 
         [HttpPost]
-        public async Task Post([FromBody] CreateClassRoomCommand command, CancellationToken cancellationToken)
+        public async Task Post([FromBody] CreateStudentCommand command, CancellationToken cancellationToken)
         {
             await Mediator.Send(command, cancellationToken);
         }

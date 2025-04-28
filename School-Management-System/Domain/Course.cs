@@ -11,10 +11,7 @@ namespace Domain
         public Guid Id { get; set; }
         public string Name { get; set; }
         public string CreditHour { get; set; }
-        public ICollection<Student> Students { get; set; }
-        public Teacher Teacher { get; set; }
-        public Guid TeacherId { get; set; }
         public ClassRoom ClassRoom { get; set; }
-        public Guid GradeId { get; set; }
+        public Guid ClassRoomId { get; set; }
     }
 }

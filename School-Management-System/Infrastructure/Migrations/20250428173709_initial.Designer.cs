@@ -12,8 +12,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Infrastructure.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250414063432_class_table_added")]
-    partial class class_table_added
+    [Migration("20250428173709_initial")]
+    partial class initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -25,22 +25,22 @@ namespace Infrastructure.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("CourseStudent", b =>
+            modelBuilder.Entity("ClassRoomTeacher", b =>
                 {
-                    b.Property<Guid>("CoursesId")
+                    b.Property<Guid>("ClassRoomsId")
                         .HasColumnType("uuid");
 
-                    b.Property<Guid>("StudentsId")
+                    b.Property<Guid>("TeachersId")
                         .HasColumnType("uuid");
 
-                    b.HasKey("CoursesId", "StudentsId");
+                    b.HasKey("ClassRoomsId", "TeachersId");
 
-                    b.HasIndex("StudentsId");
+                    b.HasIndex("TeachersId");
 
-                    b.ToTable("CourseStudent");
+                    b.ToTable("ClassRoomTeacher");
                 });
 
-            modelBuilder.Entity("Domain.Class", b =>
+            modelBuilder.Entity("Domain.ClassRoom", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -49,9 +49,6 @@ namespace Infrastructure.Migrations
                     b.Property<string>("AcademicYear")
                         .IsRequired()
                         .HasColumnType("text");
-
-                    b.Property<Guid>("ClassTeacherId")
-                        .HasColumnType("uuid");
 
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("timestamp with time zone");
@@ -71,14 +68,9 @@ namespace Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<Guid>("TeacherId")
-                        .HasColumnType("uuid");
-
                     b.HasKey("Id");
 
-                    b.HasIndex("TeacherId");
-
-                    b.ToTable("Classes");
+                    b.ToTable("ClassRooms");
                 });
 
             modelBuilder.Entity("Domain.Course", b =>
@@ -87,7 +79,7 @@ namespace Infrastructure.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
-                    b.Property<Guid>("ClassId")
+                    b.Property<Guid>("ClassRoomId")
                         .HasColumnType("uuid");
 
                     b.Property<DateTime>("CreatedDate")
@@ -97,9 +89,6 @@ namespace Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<Guid>("GradeId")
-                        .HasColumnType("uuid");
-
                     b.Property<DateTime>("ModifiedDate")
                         .HasColumnType("timestamp with time zone");
 
@@ -107,14 +96,9 @@ namespace Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<Guid>("TeacherId")
-                        .HasColumnType("uuid");
-
                     b.HasKey("Id");
 
-                    b.HasIndex("ClassId");
-
-                    b.HasIndex("TeacherId");
+                    b.HasIndex("ClassRoomId");
 
                     b.ToTable("Courses");
                 });
@@ -132,7 +116,7 @@ namespace Infrastructure.Migrations
                     b.Property<int>("Age")
                         .HasColumnType("integer");
 
-                    b.Property<Guid>("ClassId")
+                    b.Property<Guid>("ClassRoomId")
                         .HasColumnType("uuid");
 
                     b.Property<string>("ContactNumber")
@@ -153,9 +137,6 @@ namespace Infrastructure.Migrations
                     b.Property<int>("Gender")
                         .HasColumnType("integer");
 
-                    b.Property<Guid>("GradeId")
-                        .HasColumnType("uuid");
-
                     b.Property<string>("GrandFatherName")
                         .IsRequired()
                         .HasColumnType("text");
@@ -173,7 +154,7 @@ namespace Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ClassId");
+                    b.HasIndex("ClassRoomId");
 
                     b.ToTable("Students");
                 });
@@ -229,72 +210,48 @@ namespace Infrastructure.Migrations
                     b.ToTable("Teachers");
                 });
 
-            modelBuilder.Entity("CourseStudent", b =>
+            modelBuilder.Entity("ClassRoomTeacher", b =>
                 {
-                    b.HasOne("Domain.Course", null)
+                    b.HasOne("Domain.ClassRoom", null)
                         .WithMany()
-                        .HasForeignKey("CoursesId")
+                        .HasForeignKey("ClassRoomsId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Domain.Student", null)
+                    b.HasOne("Domain.Teacher", null)
                         .WithMany()
-                        .HasForeignKey("StudentsId")
+                        .HasForeignKey("TeachersId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-                });
-
-            modelBuilder.Entity("Domain.Class", b =>
-                {
-                    b.HasOne("Domain.Teacher", "Teacher")
-                        .WithMany()
-                        .HasForeignKey("TeacherId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Teacher");
                 });
 
             modelBuilder.Entity("Domain.Course", b =>
                 {
-                    b.HasOne("Domain.Class", "Class")
+                    b.HasOne("Domain.ClassRoom", "ClassRoom")
                         .WithMany("Courses")
-                        .HasForeignKey("ClassId")
+                        .HasForeignKey("ClassRoomId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Domain.Teacher", "Teacher")
-                        .WithMany("Courses")
-                        .HasForeignKey("TeacherId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Class");
-
-                    b.Navigation("Teacher");
+                    b.Navigation("ClassRoom");
                 });
 
             modelBuilder.Entity("Domain.Student", b =>
                 {
-                    b.HasOne("Domain.Class", "Class")
+                    b.HasOne("Domain.ClassRoom", "ClassRoom")
                         .WithMany("Students")
-                        .HasForeignKey("ClassId")
+                        .HasForeignKey("ClassRoomId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Class");
+                    b.Navigation("ClassRoom");
                 });
 
-            modelBuilder.Entity("Domain.Class", b =>
+            modelBuilder.Entity("Domain.ClassRoom", b =>
                 {
                     b.Navigation("Courses");
 
                     b.Navigation("Students");
-                });
-
-            modelBuilder.Entity("Domain.Teacher", b =>
-                {
-                    b.Navigation("Courses");
                 });
 #pragma warning restore 612, 618
         }

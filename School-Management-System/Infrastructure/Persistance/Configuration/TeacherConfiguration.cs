@@ -14,13 +14,8 @@ namespace Infrastructure.Persistance.Configuration
         public void Configure(EntityTypeBuilder<Teacher> builder)
         {
             builder.HasKey(x => x.Id);
-            builder.HasMany(x => x.Courses)
-                   .WithOne(x => x.Teacher)
-                   .HasForeignKey(x => x.TeacherId);
-
-            builder.HasOne(x => x.ClassRoom)
-                   .WithMany(x => x.Teachers)
-                   .HasForeignKey(x => x.ClassId);
+            builder.HasMany(x => x.ClassRooms)
+                   .WithMany(x => x.Teachers);
         }
     }
 }

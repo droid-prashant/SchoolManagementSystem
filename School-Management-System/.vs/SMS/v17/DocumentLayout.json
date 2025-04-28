@@ -1,12 +1,92 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Projects\\School-Management-System\\SMS\\",
-  "Documents": [],
+  "WorkspaceRootPath": "D:\\Projects\\School-Management-System\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1F0E616F-BF34-447A-867B-89FFCF38BD02}|WebApi\\WebApi.csproj|d:\\projects\\school-management-system\\webapi\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F0E616F-BF34-447A-867B-89FFCF38BD02}|WebApi\\WebApi.csproj|solutionrelative:webapi\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C1D1794-FD3F-4EDD-8315-DE4CD9272377}|Application\\Application.csproj|d:\\projects\\school-management-system\\application\\courses\\command\\createcourse\\createcoursecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C1D1794-FD3F-4EDD-8315-DE4CD9272377}|Application\\Application.csproj|solutionrelative:application\\courses\\command\\createcourse\\createcoursecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F0E616F-BF34-447A-867B-89FFCF38BD02}|WebApi\\WebApi.csproj|d:\\projects\\school-management-system\\webapi\\controllers\\classroomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F0E616F-BF34-447A-867B-89FFCF38BD02}|WebApi\\WebApi.csproj|solutionrelative:webapi\\controllers\\classroomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C1D1794-FD3F-4EDD-8315-DE4CD9272377}|Application\\Application.csproj|d:\\projects\\school-management-system\\application\\students\\command\\createstudent\\createstudentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C1D1794-FD3F-4EDD-8315-DE4CD9272377}|Application\\Application.csproj|solutionrelative:application\\students\\command\\createstudent\\createstudentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ClassRoomController.cs",
+              "DocumentMoniker": "D:\\Projects\\School-Management-System\\WebApi\\Controllers\\ClassRoomController.cs",
+              "RelativeDocumentMoniker": "WebApi\\Controllers\\ClassRoomController.cs",
+              "ToolTip": "D:\\Projects\\School-Management-System\\WebApi\\Controllers\\ClassRoomController.cs",
+              "RelativeToolTip": "WebApi\\Controllers\\ClassRoomController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T17:57:43.25Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "D:\\Projects\\School-Management-System\\WebApi\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "WebApi\\Controllers\\StudentController.cs",
+              "ToolTip": "D:\\Projects\\School-Management-System\\WebApi\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "WebApi\\Controllers\\StudentController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAmwAkAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T17:57:29.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CreateCourseCommand.cs",
+              "DocumentMoniker": "D:\\Projects\\School-Management-System\\Application\\Courses\\Command\\CreateCourse\\CreateCourseCommand.cs",
+              "RelativeDocumentMoniker": "Application\\Courses\\Command\\CreateCourse\\CreateCourseCommand.cs",
+              "ToolTip": "D:\\Projects\\School-Management-System\\Application\\Courses\\Command\\CreateCourse\\CreateCourseCommand.cs",
+              "RelativeToolTip": "Application\\Courses\\Command\\CreateCourse\\CreateCourseCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T17:51:02.326Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CreateStudentCommand.cs",
+              "DocumentMoniker": "D:\\Projects\\School-Management-System\\Application\\Students\\Command\\CreateStudent\\CreateStudentCommand.cs",
+              "RelativeDocumentMoniker": "Application\\Students\\Command\\CreateStudent\\CreateStudentCommand.cs",
+              "ToolTip": "D:\\Projects\\School-Management-System\\Application\\Students\\Command\\CreateStudent\\CreateStudentCommand.cs",
+              "RelativeToolTip": "Application\\Students\\Command\\CreateStudent\\CreateStudentCommand.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAA7wAsAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T17:45:21.677Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

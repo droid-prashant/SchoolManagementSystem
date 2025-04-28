@@ -16,11 +16,11 @@ namespace Infrastructure.Persistance.Configuration
             builder.HasKey(x => x.Id);
             builder.HasMany(x => x.Courses)
                    .WithOne(x => x.ClassRoom)
-                   .HasForeignKey(x => x.GradeId);
+                   .HasForeignKey(x => x.ClassRoomId);
 
-            builder.HasMany(x => x.Courses)
+            builder.HasMany(x => x.Students)
                    .WithOne(x => x.ClassRoom)
-                   .HasForeignKey(x => x.GradeId);
+                   .HasForeignKey(x => x.ClassRoomId);
         }
     }
 }
