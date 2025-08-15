@@ -68,6 +68,108 @@ namespace Infrastructure.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("ClassRooms");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("10000000-0000-0000-0000-000000000001"),
+                            AcademicYear = "2024/2025",
+                            CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Name = "One",
+                            RoomNumber = "1",
+                            Section = "A"
+                        },
+                        new
+                        {
+                            Id = new Guid("10000000-0000-0000-0000-000000000002"),
+                            AcademicYear = "2024/2025",
+                            CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Name = "Two",
+                            RoomNumber = "2",
+                            Section = "A"
+                        },
+                        new
+                        {
+                            Id = new Guid("10000000-0000-0000-0000-000000000003"),
+                            AcademicYear = "2024/2025",
+                            CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Name = "Three",
+                            RoomNumber = "3",
+                            Section = "A"
+                        },
+                        new
+                        {
+                            Id = new Guid("10000000-0000-0000-0000-000000000004"),
+                            AcademicYear = "2024/2025",
+                            CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Name = "Four",
+                            RoomNumber = "4",
+                            Section = "A"
+                        },
+                        new
+                        {
+                            Id = new Guid("10000000-0000-0000-0000-000000000005"),
+                            AcademicYear = "2024/2025",
+                            CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Name = "Five",
+                            RoomNumber = "5",
+                            Section = "A"
+                        },
+                        new
+                        {
+                            Id = new Guid("10000000-0000-0000-0000-000000000006"),
+                            AcademicYear = "2024/2025",
+                            CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Name = "Six",
+                            RoomNumber = "6",
+                            Section = "A"
+                        },
+                        new
+                        {
+                            Id = new Guid("10000000-0000-0000-0000-000000000007"),
+                            AcademicYear = "2024/2025",
+                            CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Name = "Seven",
+                            RoomNumber = "7",
+                            Section = "A"
+                        },
+                        new
+                        {
+                            Id = new Guid("10000000-0000-0000-0000-000000000008"),
+                            AcademicYear = "2024/2025",
+                            CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Name = "Eight",
+                            RoomNumber = "8",
+                            Section = "A"
+                        },
+                        new
+                        {
+                            Id = new Guid("10000000-0000-0000-0000-000000000009"),
+                            AcademicYear = "2024/2025",
+                            CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Name = "Nine",
+                            RoomNumber = "9",
+                            Section = "A"
+                        },
+                        new
+                        {
+                            Id = new Guid("10000000-0000-0000-0000-000000000010"),
+                            AcademicYear = "2024/2025",
+                            CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Name = "Ten",
+                            RoomNumber = "10",
+                            Section = "A"
+                        });
                 });
 
             modelBuilder.Entity("Domain.Course", b =>
@@ -79,12 +181,19 @@ namespace Infrastructure.Migrations
                     b.Property<Guid>("ClassRoomId")
                         .HasColumnType("uuid");
 
+                    b.Property<string>("CourseType")
+                        .IsRequired()
+                        .HasColumnType("text");
+
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("CreditHour")
                         .IsRequired()
                         .HasColumnType("text");
+
+                    b.Property<int>("FullMarks")
+                        .HasColumnType("integer");
 
                     b.Property<DateTime>("ModifiedDate")
                         .HasColumnType("timestamp with time zone");
@@ -93,11 +202,44 @@ namespace Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<int>("PassMarks")
+                        .HasColumnType("integer");
+
                     b.HasKey("Id");
 
                     b.HasIndex("ClassRoomId");
 
                     b.ToTable("Courses");
+                });
+
+            modelBuilder.Entity("Domain.ExamResult", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("ExamType")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("FinalGrade")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<double>("ObtainedMarks")
+                        .HasColumnType("double precision");
+
+                    b.Property<Guid>("StudentId")
+                        .HasColumnType("uuid");
+
+                    b.Property<double>("TotalMarks")
+                        .HasColumnType("double precision");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("StudentId");
+
+                    b.ToTable("ExamResults");
                 });
 
             modelBuilder.Entity("Domain.Student", b =>
@@ -154,6 +296,74 @@ namespace Infrastructure.Migrations
                     b.HasIndex("ClassRoomId");
 
                     b.ToTable("Students");
+                });
+
+            modelBuilder.Entity("Domain.SubjectMark", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid>("CourseId")
+                        .HasColumnType("uuid");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<Guid>("ExamResultId")
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("FinalGrade")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<double>("FullPracticalMarks")
+                        .HasColumnType("double precision");
+
+                    b.Property<double>("FullTheoryMarks")
+                        .HasColumnType("double precision");
+
+                    b.Property<double>("GradePointPractical")
+                        .HasColumnType("double precision");
+
+                    b.Property<double>("GradePointTheory")
+                        .HasColumnType("double precision");
+
+                    b.Property<string>("GradePractical")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("GradeTheory")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<DateTime>("ModifiedDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<double>("ObtainedPracticalMarks")
+                        .HasColumnType("double precision");
+
+                    b.Property<double>("ObtainedTheoryMarks")
+                        .HasColumnType("double precision");
+
+                    b.Property<double>("PassPracticalMarks")
+                        .HasColumnType("double precision");
+
+                    b.Property<double>("PassTheoryMarks")
+                        .HasColumnType("double precision");
+
+                    b.Property<Guid>("StudentId")
+                        .HasColumnType("uuid");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CourseId");
+
+                    b.HasIndex("ExamResultId");
+
+                    b.HasIndex("StudentId");
+
+                    b.ToTable("SubjectMarks");
                 });
 
             modelBuilder.Entity("Domain.Teacher", b =>
@@ -233,6 +443,17 @@ namespace Infrastructure.Migrations
                     b.Navigation("ClassRoom");
                 });
 
+            modelBuilder.Entity("Domain.ExamResult", b =>
+                {
+                    b.HasOne("Domain.Student", "Student")
+                        .WithMany("ExamResults")
+                        .HasForeignKey("StudentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Student");
+                });
+
             modelBuilder.Entity("Domain.Student", b =>
                 {
                     b.HasOne("Domain.ClassRoom", "ClassRoom")
@@ -244,11 +465,55 @@ namespace Infrastructure.Migrations
                     b.Navigation("ClassRoom");
                 });
 
+            modelBuilder.Entity("Domain.SubjectMark", b =>
+                {
+                    b.HasOne("Domain.Course", "Course")
+                        .WithMany("SubjectMarks")
+                        .HasForeignKey("CourseId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Domain.ExamResult", "ExamResult")
+                        .WithMany("SubjectMarks")
+                        .HasForeignKey("ExamResultId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Domain.Student", "Student")
+                        .WithMany("SubjectMarks")
+                        .HasForeignKey("StudentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Course");
+
+                    b.Navigation("ExamResult");
+
+                    b.Navigation("Student");
+                });
+
             modelBuilder.Entity("Domain.ClassRoom", b =>
                 {
                     b.Navigation("Courses");
 
                     b.Navigation("Students");
+                });
+
+            modelBuilder.Entity("Domain.Course", b =>
+                {
+                    b.Navigation("SubjectMarks");
+                });
+
+            modelBuilder.Entity("Domain.ExamResult", b =>
+                {
+                    b.Navigation("SubjectMarks");
+                });
+
+            modelBuilder.Entity("Domain.Student", b =>
+                {
+                    b.Navigation("ExamResults");
+
+                    b.Navigation("SubjectMarks");
                 });
 #pragma warning restore 612, 618
         }

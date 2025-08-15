@@ -16,5 +16,7 @@ namespace Domain
         public string ContactNumber { get; set; }
         public ClassRoom ClassRoom { get; set; }
         public Guid ClassRoomId { get; set; }
+        public ICollection<SubjectMark> SubjectMarks { get; set; }
+        public ICollection<ExamResult> ExamResults { get; set; }
     }
 }

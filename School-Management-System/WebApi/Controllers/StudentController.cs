@@ -1,36 +1,43 @@
 ﻿using Application.ClassRooms.Command.CreateClassRoom;
-using Application.Common.Interfaces;
-using Application.Students.Command.CreateStudent;
+using Application.Students.Dtos;
+using Application.Students.Interfaces;
+using Application.Students.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class StudentController:ApiBaseController
+    public class StudentController
     {
-        private readonly IApplicationDbContext _context;
-        public StudentController(IApplicationDbContext context)
+        private readonly IStudentService _studentService;
+        public StudentController(IStudentService studentService)
         {
-            _context = context;
+            _studentService = studentService;
         }
 
         [HttpGet]
-        public IEnumerable<string> Get()
+        [Route("GetStudent")]
+        public async Task<List<StudentViewModel>> Get(CancellationToken cancellationToken)
         {
-            return new string[] { "value1", "value2" };
+            var result = await _studentService.GetStudentAsync(cancellationToken);
+            return result;
         }
 
-        [HttpGet("{id}")]
-        public string Get(int id)
+        [HttpGet()]
+        [Route("GetStudentByClassId")]
+        public async Task<List<StudentViewModel>> GetStudentByClassId([FromQuery] string classId, CancellationToken cancellationToken)
         {
-            return "value";
+            var classRoomId = Guid.Parse(classId);
+            var result = await _studentService.GetStudentByClassIdAsync(classRoomId, cancellationToken);
+            return result;
         }
 
         [HttpPost]
-        public async Task Post([FromBody] CreateStudentCommand command, CancellationToken cancellationToken)
+        [Route("AddStudent")]
+        public async Task Post([FromBody] StudentDto addStudent, CancellationToken cancellationToken)
         {
-            await Mediator.Send(command, cancellationToken);
+            await _studentService.AddStudentAsync(addStudent, cancellationToken);
         }
 
         [HttpPut("{id}")]

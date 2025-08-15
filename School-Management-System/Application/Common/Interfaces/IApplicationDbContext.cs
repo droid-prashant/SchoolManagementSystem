@@ -14,6 +14,8 @@ namespace Application.Common.Interfaces
         DbSet<Student> Students{ get; }
         DbSet<Course> Courses { get; }
         DbSet<ClassRoom> ClassRooms{ get; }
+        DbSet<SubjectMark> SubjectMarks{ get; }
+        DbSet<ExamResult> ExamResults{ get; }
         Task<int> SaveChangesAsync(CancellationToken cancellationToken);
     }
 }

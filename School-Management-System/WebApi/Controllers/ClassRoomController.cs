@@ -1,4 +1,6 @@
 ﻿using Application.ClassRooms.Command.CreateClassRoom;
+using Application.ClassRooms.Interfaces;
+using Application.ClassRooms.VieModels;
 using Application.Common.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
@@ -8,16 +10,18 @@ namespace WebApi.Controllers
     [ApiController]
     public class ClassRoomController : ApiBaseController
     {
-        private readonly IApplicationDbContext _context;
-        public ClassRoomController(IApplicationDbContext context)
+        private readonly IClassRoomService _classRoom;
+        public ClassRoomController(IClassRoomService classRoom)
         {
-            _context = context;
+            _classRoom = classRoom;
         }
 
         [HttpGet]
-        public IEnumerable<string> Get()
+        [Route("GetClassRoom")]
+        public async Task<List<ClassRoomViewModel>> Get(CancellationToken cancellationToken)
         {
-            return new string[] { "value1", "value2" };
+            var result = await _classRoom.GetClassRoomList(cancellationToken);
+            return result;
         }
 
         [HttpGet("{id}")]
