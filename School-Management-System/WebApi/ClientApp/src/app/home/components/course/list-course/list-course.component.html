@@ -1,0 +1,35 @@
+<div class="card">
+    <div class="CourseSearchBar">
+        <p-dropdown [options]="classRooms" optionLabel="name" optionValue="id" formControlName="classRoomId"
+            placeholder="Select Class"></p-dropdown>
+    </div>
+    <p-table [value]="courses" [paginator]="true" [rows]="5" [tableStyle]="{ 'min-width': '50rem' }"
+        [rowsPerPageOptions]="[5, 10, 20]">
+        <ng-template pTemplate="header">
+            <tr>
+                <th style="width:25%">Id</th>
+                <th style="width:25%">Class</th>
+                <th style="width:25%">Course Name</th>
+                <th style="width:25%">Credit Hour</th>
+                <th style="width:25%">Full Marks</th>
+                <th style="width:25%">Pass Marks</th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-course let-rowIndex="rowIndex">
+            <tr>
+                <td>{{ rowIndex + 1 }}</td>
+                <td>{{ course.classRoom }}</td>
+                <td>{{ course.name }} - {{course.courseType}}</td>
+                <td>{{ course.creditHour }}</td>
+                <td>{{ course.fullMarks }}</td>
+                <td>{{ course.passMarks }}</td>
+                <td>
+                    <div class="speeddial-linear-demo">
+                        <p-speedDial [model]="actionItems" direction="left" showIcon="pi pi-bars" hideIcon="pi pi-times"
+                            class="font-medium mb-2" />
+                    </div>
+                </td>
+            </tr>
+        </ng-template>
+    </p-table>
+</div>

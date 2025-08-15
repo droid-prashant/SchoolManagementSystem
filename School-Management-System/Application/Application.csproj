@@ -6,4 +6,24 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="ClassRooms\Dtos\" />
+    <Folder Include="ExamResults\Interfaces\" />
+    <Folder Include="ExamResults\Query\" />
+    <Folder Include="Courses\Command\ViewModels\" />
+    <Folder Include="Courses\Query\" />
+    <Folder Include="ExamResults\ViewModels\" />
+    <Folder Include="SubjectMarks\ViewModels\" />
+    <Folder Include="Teachers\Query\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.5.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.15" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+  </ItemGroup>
+
 </Project>

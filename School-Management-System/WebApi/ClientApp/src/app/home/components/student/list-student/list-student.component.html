@@ -1,0 +1,32 @@
+<div class="card">
+    <p-table [value]="students" [paginator]="true" [rows]="5" [tableStyle]="{ 'min-width': '50rem' }"
+        [rowsPerPageOptions]="[5, 10, 20]">
+        <ng-template pTemplate="header">
+            <tr>
+                <th style="width:25%">Id</th>
+                <th style="width:25%">Name</th>
+                <th style="width:25%">Class</th>
+                <th style="width:25%">Section</th>
+                <th style="width:25%">Gender</th>
+                <th style="width:25%">Address</th>
+                <th style="width:25%">Action</th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-student let-rowIndex="rowIndex">
+            <tr>
+                <td>{{ rowIndex + 1 }}</td>
+                <td>{{ student.name }}</td>
+                <td>{{ student.classRoom }}</td>
+                <td>{{ student.section }}</td>
+                <td>{{ student.gender }}</td>
+                <td>{{ student.address }}</td>
+                <td>
+                    <div class="speeddial-linear-demo">
+                        <p-speedDial [model]="actionItems" direction="left" showIcon="pi pi-bars" hideIcon="pi pi-times"
+                            class="font-medium mb-2" />
+                    </div>
+                </td>
+            </tr>
+        </ng-template>
+    </p-table>
+</div>

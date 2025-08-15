@@ -1,12 +1,405 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Projects\\School-Management-System\\SMS\\",
-  "Documents": [],
+  "WorkspaceRootPath": "D:\\Projects\\School-Management-System\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AC6F8FD4-00F2-4266-90FB-9638CBD83A7D}|Infrastructure\\Infrastructure.csproj|d:\\projects\\school-management-system\\infrastructure\\services\\courses\\courseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC6F8FD4-00F2-4266-90FB-9638CBD83A7D}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\services\\courses\\courseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C1D1794-FD3F-4EDD-8315-DE4CD9272377}|Application\\Application.csproj|d:\\projects\\school-management-system\\application\\courses\\viewmodels\\courseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C1D1794-FD3F-4EDD-8315-DE4CD9272377}|Application\\Application.csproj|solutionrelative:application\\courses\\viewmodels\\courseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC6F8FD4-00F2-4266-90FB-9638CBD83A7D}|Infrastructure\\Infrastructure.csproj|d:\\projects\\school-management-system\\infrastructure\\services\\classrooms\\classroomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC6F8FD4-00F2-4266-90FB-9638CBD83A7D}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\services\\classrooms\\classroomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC6F8FD4-00F2-4266-90FB-9638CBD83A7D}|Infrastructure\\Infrastructure.csproj|d:\\projects\\school-management-system\\infrastructure\\persistance\\configuration\\subjectmarkconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC6F8FD4-00F2-4266-90FB-9638CBD83A7D}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\persistance\\configuration\\subjectmarkconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE0DCAA1-72D4-4B44-9D5F-56304C9D864E}|Domain\\Domain.csproj|d:\\projects\\school-management-system\\domain\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE0DCAA1-72D4-4B44-9D5F-56304C9D864E}|Domain\\Domain.csproj|solutionrelative:domain\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE0DCAA1-72D4-4B44-9D5F-56304C9D864E}|Domain\\Domain.csproj|d:\\projects\\school-management-system\\domain\\subjectmark.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE0DCAA1-72D4-4B44-9D5F-56304C9D864E}|Domain\\Domain.csproj|solutionrelative:domain\\subjectmark.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC6F8FD4-00F2-4266-90FB-9638CBD83A7D}|Infrastructure\\Infrastructure.csproj|d:\\projects\\school-management-system\\infrastructure\\persistance\\configuration\\examresultconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC6F8FD4-00F2-4266-90FB-9638CBD83A7D}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\persistance\\configuration\\examresultconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC6F8FD4-00F2-4266-90FB-9638CBD83A7D}|Infrastructure\\Infrastructure.csproj|d:\\projects\\school-management-system\\infrastructure\\services\\subjectmarks\\subjectmarkservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC6F8FD4-00F2-4266-90FB-9638CBD83A7D}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\services\\subjectmarks\\subjectmarkservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C1D1794-FD3F-4EDD-8315-DE4CD9272377}|Application\\Application.csproj|d:\\projects\\school-management-system\\application\\courses\\dtos\\coursedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C1D1794-FD3F-4EDD-8315-DE4CD9272377}|Application\\Application.csproj|solutionrelative:application\\courses\\dtos\\coursedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C1D1794-FD3F-4EDD-8315-DE4CD9272377}|Application\\Application.csproj|d:\\projects\\school-management-system\\application\\subjectmarks\\dtos\\subjectmarkdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C1D1794-FD3F-4EDD-8315-DE4CD9272377}|Application\\Application.csproj|solutionrelative:application\\subjectmarks\\dtos\\subjectmarkdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C1D1794-FD3F-4EDD-8315-DE4CD9272377}|Application\\Application.csproj|d:\\projects\\school-management-system\\application\\subjectmarks\\interfaces\\isubjectmarkservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C1D1794-FD3F-4EDD-8315-DE4CD9272377}|Application\\Application.csproj|solutionrelative:application\\subjectmarks\\interfaces\\isubjectmarkservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C1D1794-FD3F-4EDD-8315-DE4CD9272377}|Application\\Application.csproj|d:\\projects\\school-management-system\\application\\courses\\interfaces\\icourseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C1D1794-FD3F-4EDD-8315-DE4CD9272377}|Application\\Application.csproj|solutionrelative:application\\courses\\interfaces\\icourseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F0E616F-BF34-447A-867B-89FFCF38BD02}|WebApi\\WebApi.csproj|d:\\projects\\school-management-system\\webapi\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F0E616F-BF34-447A-867B-89FFCF38BD02}|WebApi\\WebApi.csproj|solutionrelative:webapi\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F0E616F-BF34-447A-867B-89FFCF38BD02}|WebApi\\WebApi.csproj|d:\\projects\\school-management-system\\webapi\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F0E616F-BF34-447A-867B-89FFCF38BD02}|WebApi\\WebApi.csproj|solutionrelative:webapi\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC6F8FD4-00F2-4266-90FB-9638CBD83A7D}|Infrastructure\\Infrastructure.csproj|d:\\projects\\school-management-system\\infrastructure\\services\\students\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC6F8FD4-00F2-4266-90FB-9638CBD83A7D}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\services\\students\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C1D1794-FD3F-4EDD-8315-DE4CD9272377}|Application\\Application.csproj|d:\\projects\\school-management-system\\application\\students\\interfaces\\istudentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C1D1794-FD3F-4EDD-8315-DE4CD9272377}|Application\\Application.csproj|solutionrelative:application\\students\\interfaces\\istudentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC6F8FD4-00F2-4266-90FB-9638CBD83A7D}|Infrastructure\\Infrastructure.csproj|d:\\projects\\school-management-system\\infrastructure\\persistance\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC6F8FD4-00F2-4266-90FB-9638CBD83A7D}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\persistance\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C1D1794-FD3F-4EDD-8315-DE4CD9272377}|Application\\Application.csproj|d:\\projects\\school-management-system\\application\\common\\interfaces\\iapplicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C1D1794-FD3F-4EDD-8315-DE4CD9272377}|Application\\Application.csproj|solutionrelative:application\\common\\interfaces\\iapplicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C1D1794-FD3F-4EDD-8315-DE4CD9272377}|Application\\Application.csproj|d:\\projects\\school-management-system\\application\\examresults\\dtos\\examresultdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C1D1794-FD3F-4EDD-8315-DE4CD9272377}|Application\\Application.csproj|solutionrelative:application\\examresults\\dtos\\examresultdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE0DCAA1-72D4-4B44-9D5F-56304C9D864E}|Domain\\Domain.csproj|d:\\projects\\school-management-system\\domain\\examresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE0DCAA1-72D4-4B44-9D5F-56304C9D864E}|Domain\\Domain.csproj|solutionrelative:domain\\examresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC6F8FD4-00F2-4266-90FB-9638CBD83A7D}|Infrastructure\\Infrastructure.csproj|d:\\projects\\school-management-system\\infrastructure\\persistance\\configuration\\courseconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC6F8FD4-00F2-4266-90FB-9638CBD83A7D}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\persistance\\configuration\\courseconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC6F8FD4-00F2-4266-90FB-9638CBD83A7D}|Infrastructure\\Infrastructure.csproj|d:\\projects\\school-management-system\\infrastructure\\persistance\\configuration\\studentconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC6F8FD4-00F2-4266-90FB-9638CBD83A7D}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\persistance\\configuration\\studentconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE0DCAA1-72D4-4B44-9D5F-56304C9D864E}|Domain\\Domain.csproj|d:\\projects\\school-management-system\\domain\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE0DCAA1-72D4-4B44-9D5F-56304C9D864E}|Domain\\Domain.csproj|solutionrelative:domain\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ClassRoomService.cs",
+              "DocumentMoniker": "D:\\Projects\\School-Management-System\\Infrastructure\\Services\\ClassRooms\\ClassRoomService.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Services\\ClassRooms\\ClassRoomService.cs",
+              "ToolTip": "D:\\Projects\\School-Management-System\\Infrastructure\\Services\\ClassRooms\\ClassRoomService.cs",
+              "RelativeToolTip": "Infrastructure\\Services\\ClassRooms\\ClassRoomService.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB0AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T11:16:07.744Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Course.cs",
+              "DocumentMoniker": "D:\\Projects\\School-Management-System\\Domain\\Course.cs",
+              "RelativeDocumentMoniker": "Domain\\Course.cs",
+              "ToolTip": "D:\\Projects\\School-Management-System\\Domain\\Course.cs",
+              "RelativeToolTip": "Domain\\Course.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T17:46:45.69Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CourseService.cs",
+              "DocumentMoniker": "D:\\Projects\\School-Management-System\\Infrastructure\\Services\\Courses\\CourseService.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Services\\Courses\\CourseService.cs",
+              "ToolTip": "D:\\Projects\\School-Management-System\\Infrastructure\\Services\\Courses\\CourseService.cs",
+              "RelativeToolTip": "Infrastructure\\Services\\Courses\\CourseService.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAswBgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T18:37:26.772Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ICourseService.cs",
+              "DocumentMoniker": "D:\\Projects\\School-Management-System\\Application\\Courses\\Interfaces\\ICourseService.cs",
+              "RelativeDocumentMoniker": "Application\\Courses\\Interfaces\\ICourseService.cs",
+              "ToolTip": "D:\\Projects\\School-Management-System\\Application\\Courses\\Interfaces\\ICourseService.cs",
+              "RelativeToolTip": "Application\\Courses\\Interfaces\\ICourseService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T18:40:43.137Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SubjectMark.cs",
+              "DocumentMoniker": "D:\\Projects\\School-Management-System\\Domain\\SubjectMark.cs",
+              "RelativeDocumentMoniker": "Domain\\SubjectMark.cs",
+              "ToolTip": "D:\\Projects\\School-Management-System\\Domain\\SubjectMark.cs",
+              "RelativeToolTip": "Domain\\SubjectMark.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAowBkAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T17:25:35.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CourseViewModel.cs",
+              "DocumentMoniker": "D:\\Projects\\School-Management-System\\Application\\Courses\\ViewModels\\CourseViewModel.cs",
+              "RelativeDocumentMoniker": "Application\\Courses\\ViewModels\\CourseViewModel.cs",
+              "ToolTip": "D:\\Projects\\School-Management-System\\Application\\Courses\\ViewModels\\CourseViewModel.cs",
+              "RelativeToolTip": "Application\\Courses\\ViewModels\\CourseViewModel.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwAkAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T10:53:16.611Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SubjectMarkService.cs",
+              "DocumentMoniker": "D:\\Projects\\School-Management-System\\Infrastructure\\Services\\SubjectMarks\\SubjectMarkService.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Services\\SubjectMarks\\SubjectMarkService.cs",
+              "ToolTip": "D:\\Projects\\School-Management-System\\Infrastructure\\Services\\SubjectMarks\\SubjectMarkService.cs",
+              "RelativeToolTip": "Infrastructure\\Services\\SubjectMarks\\SubjectMarkService.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA2wBUAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T18:30:41.679Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ExamResultConfiguration.cs",
+              "DocumentMoniker": "D:\\Projects\\School-Management-System\\Infrastructure\\Persistance\\Configuration\\ExamResultConfiguration.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Persistance\\Configuration\\ExamResultConfiguration.cs",
+              "ToolTip": "D:\\Projects\\School-Management-System\\Infrastructure\\Persistance\\Configuration\\ExamResultConfiguration.cs",
+              "RelativeToolTip": "Infrastructure\\Persistance\\Configuration\\ExamResultConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T17:51:53.984Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SubjectMarkConfiguration.cs",
+              "DocumentMoniker": "D:\\Projects\\School-Management-System\\Infrastructure\\Persistance\\Configuration\\SubjectMarkConfiguration.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Persistance\\Configuration\\SubjectMarkConfiguration.cs",
+              "ToolTip": "D:\\Projects\\School-Management-System\\Infrastructure\\Persistance\\Configuration\\SubjectMarkConfiguration.cs",
+              "RelativeToolTip": "Infrastructure\\Persistance\\Configuration\\SubjectMarkConfiguration.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T17:35:20.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ISubjectMarkService.cs",
+              "DocumentMoniker": "D:\\Projects\\School-Management-System\\Application\\SubjectMarks\\Interfaces\\ISubjectMarkService.cs",
+              "RelativeDocumentMoniker": "Application\\SubjectMarks\\Interfaces\\ISubjectMarkService.cs",
+              "ToolTip": "D:\\Projects\\School-Management-System\\Application\\SubjectMarks\\Interfaces\\ISubjectMarkService.cs",
+              "RelativeToolTip": "Application\\SubjectMarks\\Interfaces\\ISubjectMarkService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T18:29:06.679Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CourseDto.cs",
+              "DocumentMoniker": "D:\\Projects\\School-Management-System\\Application\\Courses\\Dtos\\CourseDto.cs",
+              "RelativeDocumentMoniker": "Application\\Courses\\Dtos\\CourseDto.cs",
+              "ToolTip": "D:\\Projects\\School-Management-System\\Application\\Courses\\Dtos\\CourseDto.cs",
+              "RelativeToolTip": "Application\\Courses\\Dtos\\CourseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T18:20:06.982Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SubjectMarkDto.cs",
+              "DocumentMoniker": "D:\\Projects\\School-Management-System\\Application\\SubjectMarks\\Dtos\\SubjectMarkDto.cs",
+              "RelativeDocumentMoniker": "Application\\SubjectMarks\\Dtos\\SubjectMarkDto.cs",
+              "ToolTip": "D:\\Projects\\School-Management-System\\Application\\SubjectMarks\\Dtos\\SubjectMarkDto.cs",
+              "RelativeToolTip": "Application\\SubjectMarks\\Dtos\\SubjectMarkDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T18:23:12.252Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "StudentService.cs",
+              "DocumentMoniker": "D:\\Projects\\School-Management-System\\Infrastructure\\Services\\Students\\StudentService.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Services\\Students\\StudentService.cs",
+              "ToolTip": "D:\\Projects\\School-Management-System\\Infrastructure\\Services\\Students\\StudentService.cs",
+              "RelativeToolTip": "Infrastructure\\Services\\Students\\StudentService.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAEwEIAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T18:38:15.129Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "D:\\Projects\\School-Management-System\\WebApi\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "WebApi\\Controllers\\StudentController.cs",
+              "ToolTip": "D:\\Projects\\School-Management-System\\WebApi\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "WebApi\\Controllers\\StudentController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAmwB0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T18:39:43.615Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\Projects\\School-Management-System\\Application\\Common\\Interfaces\\IApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Application\\Common\\Interfaces\\IApplicationDbContext.cs",
+              "ToolTip": "D:\\Projects\\School-Management-System\\Application\\Common\\Interfaces\\IApplicationDbContext.cs",
+              "RelativeToolTip": "Application\\Common\\Interfaces\\IApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T18:43:03.143Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\Projects\\School-Management-System\\Infrastructure\\Persistance\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Persistance\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\Projects\\School-Management-System\\Infrastructure\\Persistance\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Infrastructure\\Persistance\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwBIAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T18:52:35.23Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CourseController.cs",
+              "DocumentMoniker": "D:\\Projects\\School-Management-System\\WebApi\\Controllers\\CourseController.cs",
+              "RelativeDocumentMoniker": "WebApi\\Controllers\\CourseController.cs",
+              "ToolTip": "D:\\Projects\\School-Management-System\\WebApi\\Controllers\\CourseController.cs",
+              "RelativeToolTip": "WebApi\\Controllers\\CourseController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAQwBcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T18:55:24.534Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IStudentService.cs",
+              "DocumentMoniker": "D:\\Projects\\School-Management-System\\Application\\Students\\Interfaces\\IStudentService.cs",
+              "RelativeDocumentMoniker": "Application\\Students\\Interfaces\\IStudentService.cs",
+              "ToolTip": "D:\\Projects\\School-Management-System\\Application\\Students\\Interfaces\\IStudentService.cs",
+              "RelativeToolTip": "Application\\Students\\Interfaces\\IStudentService.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAewAoAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T18:37:58.327Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ExamResultDto.cs",
+              "DocumentMoniker": "D:\\Projects\\School-Management-System\\Application\\ExamResults\\Dtos\\ExamResultDto.cs",
+              "RelativeDocumentMoniker": "Application\\ExamResults\\Dtos\\ExamResultDto.cs",
+              "ToolTip": "D:\\Projects\\School-Management-System\\Application\\ExamResults\\Dtos\\ExamResultDto.cs",
+              "RelativeToolTip": "Application\\ExamResults\\Dtos\\ExamResultDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T18:19:21.329Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ExamResult.cs",
+              "DocumentMoniker": "D:\\Projects\\School-Management-System\\Domain\\ExamResult.cs",
+              "RelativeDocumentMoniker": "Domain\\ExamResult.cs",
+              "ToolTip": "D:\\Projects\\School-Management-System\\Domain\\ExamResult.cs",
+              "RelativeToolTip": "Domain\\ExamResult.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA0wBEAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T17:46:15.749Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "CourseConfiguration.cs",
+              "DocumentMoniker": "D:\\Projects\\School-Management-System\\Infrastructure\\Persistance\\Configuration\\CourseConfiguration.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Persistance\\Configuration\\CourseConfiguration.cs",
+              "ToolTip": "D:\\Projects\\School-Management-System\\Infrastructure\\Persistance\\Configuration\\CourseConfiguration.cs",
+              "RelativeToolTip": "Infrastructure\\Persistance\\Configuration\\CourseConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T18:01:46.034Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "StudentConfiguration.cs",
+              "DocumentMoniker": "D:\\Projects\\School-Management-System\\Infrastructure\\Persistance\\Configuration\\StudentConfiguration.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Persistance\\Configuration\\StudentConfiguration.cs",
+              "ToolTip": "D:\\Projects\\School-Management-System\\Infrastructure\\Persistance\\Configuration\\StudentConfiguration.cs",
+              "RelativeToolTip": "Infrastructure\\Persistance\\Configuration\\StudentConfiguration.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T17:59:57.449Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Student.cs",
+              "DocumentMoniker": "D:\\Projects\\School-Management-System\\Domain\\Student.cs",
+              "RelativeDocumentMoniker": "Domain\\Student.cs",
+              "ToolTip": "D:\\Projects\\School-Management-System\\Domain\\Student.cs",
+              "RelativeToolTip": "Domain\\Student.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAwwBMAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T17:33:44.852Z"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

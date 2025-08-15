@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\School-Management-System\\SMS\\Domain\\Domain.csproj",
+      "projectUniqueName": "D:\\Projects\\School-Management-System\\Domain\\Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "D:\\Projects\\School-Management-System\\SMS\\Domain\\Domain.csproj",
+      "projectPath": "D:\\Projects\\School-Management-System\\Domain\\Domain.csproj",
       "packagesPath": "C:\\Users\\prash\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\School-Management-System\\SMS\\Domain\\obj\\",
+      "outputPath": "D:\\Projects\\School-Management-System\\Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
