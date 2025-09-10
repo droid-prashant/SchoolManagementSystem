@@ -12,9 +12,8 @@ namespace Domain
         public Guid StudentId { get; set; }
         public Student Student { get; set; }
         public string ExamType { get; set; }
-        public double TotalMarks { get; set; }
-        public double ObtainedMarks { get; set; }
-        public string FinalGrade { get; set; }
+        public double TotalCredit { get; set; }
+        public double GPA { get; set; }
         public ICollection<SubjectMark> SubjectMarks { get; set; }
     }
 }

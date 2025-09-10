@@ -77,7 +77,8 @@ export class HomeComponent implements OnInit {
         items: [
           { label: 'Exam Schedule', icon: PrimeIcons.CLOCK, routerLink: ['/exam/schedule'] },
           { label: 'Exam Marks Entry', icon: PrimeIcons.PLUS, routerLink: ['/home/exam/exam-marks-entry'] },
-          { label: 'Results', icon: PrimeIcons.CHART_BAR, routerLink: ['/exam/results'] }
+          { label: 'Results', icon: PrimeIcons.CHART_BAR, routerLink: ['/home/exam/exam-results'] },
+          // { label: 'Results', icon: PrimeIcons.CHART_BAR, routerLink: ['/home/exam/preview-result'] }
         ]
       },
       {

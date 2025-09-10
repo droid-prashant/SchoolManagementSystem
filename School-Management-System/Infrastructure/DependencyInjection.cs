@@ -3,10 +3,12 @@ using Application.ClassRooms.Interfaces;
 using Application.Common.Interfaces;
 using Application.Courses.Interfaces;
 using Application.Students.Interfaces;
+using Application.SubjectMarks.Interfaces;
 using Infrastructure.Persistance;
 using Infrastructure.Services.ClassRooms;
 using Infrastructure.Services.Courses;
 using Infrastructure.Services.Students;
+using Infrastructure.Services.SubjectMarks;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -25,6 +27,7 @@ namespace Infrastructure
             services.AddScoped<IStudentService, StudentService>();
             services.AddScoped<IClassRoomService, ClassRoomService>();
             services.AddScoped<ICourseService, CourseService>();
+            services.AddScoped<IExamService, ExamService>();
             return services;
         }
     }

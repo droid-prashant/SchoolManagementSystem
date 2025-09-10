@@ -7,8 +7,8 @@ using Application.SubjectMarks.Dtos;
 
 namespace Application.SubjectMarks.Interfaces
 {
-    public interface ISubjectMarkService
+    public interface IExamService
     {
-        Task AddSubjectMarks(List<SubjectMarkDto> subjectMarkDto, CancellationToken cancellationToken);
+        Task AddSubjectMarks(SubjectMarkDto subjectMarkDto, CancellationToken cancellationToken);
     }
 }

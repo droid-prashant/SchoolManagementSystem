@@ -1,20 +1,12 @@
-<!-- src/app/components/student-form/student-form.component.html -->
-
 <h2 class="mb-4">Exam Marks Entry</h2>
 
-<form [formGroup]="studentCategory" class="p-fluid">
+<form [formGroup]="studentMarks" class="p-fluid">
     <div class="formgrid grid">
 
         <div class="field col-3">
             <label>Class</label>
             <p-dropdown [options]="classRooms" optionLabel="name" optionValue="id" formControlName="classRoomId"
                 (onChange)="onClassRoomChange()" placeholder="Select Class"></p-dropdown>
-        </div>
-
-        <div class="field col-3">
-            <label>Section</label>
-            <p-dropdown [options]="sections" optionLabel="name" optionValue="id" formControlName="sectionId"
-                [disabled]="!isClassSelected" placeholder="Select Section"></p-dropdown>
         </div>
 
         <div class="col-12 text-right mt-2">
@@ -26,6 +18,12 @@
     <!-- Start -->
     <div class="card flex justify-content-center subject-marks-form">
         <p-dialog header="Subject Marks Entry" [modal]="true" [(visible)]="isMarksEntryVisible">
+            <div class="field col-3">
+                <label>Exam Terminal</label>
+                <p-dropdown [options]="examTerminals" optionLabel="terminalName" optionValue="terminalName"
+                    formControlName="examType" (onChange)="onExamTerminalChange()"
+                    placeholder="Select Terminal"></p-dropdown>
+            </div>
             <!-- table -->
             <div formArrayName="marks" class="card">
                 <p-table [value]="courses">

@@ -9,8 +9,13 @@ namespace Application.SubjectMarks.Dtos
     public class SubjectMarkDto
     {
         public Guid StudentId { get; set; }
+        public Guid ClassRoomId { get; set; }
+        public required string ExamType { get; set; }
+        public required List<StudentMarksList> StudentMarksLists { get; set; }
+    }
+    public class StudentMarksList
+    {
         public Guid CourseId { get; set; }
-        public string ExamType { get; set; }
         public double TheoryCredit { get; set; }
         public double PracticalCredit { get; set; }
         public double FullTheoryMarks { get; set; }
@@ -21,3 +26,4 @@ namespace Application.SubjectMarks.Dtos
         public double ObtainedPracticalMarks { get; set; }
     }
 }
+

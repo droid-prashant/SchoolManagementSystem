@@ -10,7 +10,8 @@ namespace Domain
     {
         public Guid Id { get; set; }
         public string Name { get; set; }
-        public string CreditHour { get; set; }
+        public string TheoryCreditHour { get; set; }
+        public string PracticalCreditHour { get; set; }
         public ClassRoom ClassRoom { get; set; }
         public Guid ClassRoomId { get; set; }
         public string CourseType { get; set; }

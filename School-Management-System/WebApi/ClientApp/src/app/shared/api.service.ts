@@ -7,6 +7,7 @@ import { StudentViewModel } from '../home/components/student/shared/models/viewM
 import { ClassRoomViewModel } from '../home/components/class-room/shared/models/viewModels/classRoom.viewModel';
 import { CourseDto } from '../home/components/course/shared/models/course.dto';
 import { CourseViewModel } from '../home/components/course/shared/models/course.viewModel';
+import { SubjectMarkDto } from '../home/components/exam/shared/models/examMarksEntry.dto';
 
 @Injectable({
   providedIn: 'root'
@@ -39,5 +40,8 @@ export class ApiService {
   }
   getCoursesByClass(classId: string): Observable<CourseViewModel[]> {
     return this._httpClient.get<CourseViewModel[]>(this.baseUrl + `api/Course/GetCourseByClassId?classId=${classId}`);
+  }
+  postStudentMarks(studentmarks: SubjectMarkDto): Observable<void> {
+    return this._httpClient.post<void>(this.baseUrl + "api/Exam/AddMarks", studentmarks);
   }
 }

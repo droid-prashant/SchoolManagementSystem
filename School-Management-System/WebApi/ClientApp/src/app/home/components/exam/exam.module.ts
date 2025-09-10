@@ -5,11 +5,13 @@ import { RouterOutlet } from "@angular/router";
 import { SharedModule } from "../../../shared/shared.module";
 import { ExamMarksEntryComponent } from "./exam-marks-entry/exam-marks-entry.component";
 import { ExamRoutingModule } from "./exam.routes";
+import { ResultComponent } from "./result/result.component";
 
 
 @NgModule({
     declarations: [
         ExamMarksEntryComponent,
+        ResultComponent
     ],
     imports: [
         CommonModule,

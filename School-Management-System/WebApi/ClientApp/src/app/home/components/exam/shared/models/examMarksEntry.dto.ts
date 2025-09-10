@@ -1,7 +1,11 @@
 export interface SubjectMarkDto {
-  studentId: string;
-  courseId: string;
-  examType: string;
+  studentId: string;              
+  examType: string;               
+  studentMarksLists: StudentMarksList[];
+}
+
+export interface StudentMarksList {
+  courseId: string;              
   theoryCredit: number;
   practicalCredit: number;
   fullTheoryMarks: number;

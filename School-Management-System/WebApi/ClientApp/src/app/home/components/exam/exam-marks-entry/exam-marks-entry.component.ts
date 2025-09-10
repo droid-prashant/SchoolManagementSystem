@@ -6,6 +6,8 @@ import { StudentViewModel } from '../../student/shared/models/viewModels/student
 import { CourseViewModel } from '../../course/shared/models/course.viewModel';
 import { MenuItem, MessageService, PrimeIcons } from 'primeng/api';
 import { Section } from '../shared/models/section.dto';
+import { ExamTerminal } from '../shared/models/examTerminal.dto';
+import { StudentMarksList, SubjectMarkDto } from '../shared/models/examMarksEntry.dto';
 
 @Component({
   selector: 'app-exam-marks-entry',
@@ -17,8 +19,10 @@ export class ExamMarksEntryComponent implements OnInit {
   classRooms: ClassRoomViewModel[] = []
   students: StudentViewModel[] = [];
   courses: CourseViewModel[] = [];
-  sections: Section[]
-  studentCategory!: FormGroup;
+  sections: Section[];
+  examTerminals: ExamTerminal[] = [];
+
+  studentMarks!: FormGroup;
 
   isClassSelected: boolean = false;
   isMarksEntryVisible: boolean = false;
@@ -31,10 +35,17 @@ export class ExamMarksEntryComponent implements OnInit {
       { id: 1, name: "A" },
       { id: 2, name: "B" }]
 
+    this.examTerminals = [
+      { id: 1, terminalName: 'First Terminal' },
+      { id: 2, terminalName: 'Second Terminal' },
+      { id: 3, terminalName: 'Third Terminal' },
+      { id: 4, terminalName: 'Final Terminal' }
+    ]
+
     let fb = this._formBuilder;
-    this.studentCategory = fb.group({
+    this.studentMarks = fb.group({
       classRoomId: ['', Validators.required],
-      sectionId: [''],
+      examType: [''],
       marks: fb.array([])
     });
   }
@@ -48,25 +59,25 @@ export class ExamMarksEntryComponent implements OnInit {
   }
 
   get marks(): FormArray {
-    return this.studentCategory.get('marks') as FormArray;
+    return this.studentMarks.get('marks') as FormArray;
   }
 
   setStudentMarksFormArray() {
-    const marksArray = this.studentCategory.get('marks') as FormArray;
+    const marksArray = this.studentMarks.get('marks') as FormArray;
     this.courses.forEach(course => {
       marksArray.push(this._formBuilder.group({
         courseId: [course.id, Validators.required],
-        examType: [],
-        creditHour: [],
-        fullMarks: [],
-        passMarks: [],
+        examType: ['Test', Validators.required],
+        creditHour: [course.creditHour, Validators.required],
+        fullMarks: [course.fullMarks, Validators.required],
+        passMarks: [course.passMarks, Validators.required],
         obtainedMarks: [0, [Validators.required, Validators.min(0), Validators.max(100)]]
       }));
     });
   }
 
   onClassRoomChange() {
-    let classId = this.studentCategory.controls['classRoomId'].value;
+    let classId = this.studentMarks.controls['classRoomId'].value;
     if (classId) {
       this.isClassSelected = true;
       this.listSubject();
@@ -75,6 +86,10 @@ export class ExamMarksEntryComponent implements OnInit {
     else {
       this.isClassSelected = false;
     }
+  }
+
+  onExamTerminalChange() {
+
   }
 
   getClassRooms() {
@@ -90,7 +105,7 @@ export class ExamMarksEntryComponent implements OnInit {
   }
 
   listSubject() {
-    let classId = this.studentCategory.controls['classRoomId'].value;
+    let classId = this.studentMarks.controls['classRoomId'].value;
     this._apiService.getCoursesByClass(classId).subscribe(
       {
         next: (response) => {
@@ -108,7 +123,7 @@ export class ExamMarksEntryComponent implements OnInit {
   }
 
   listStudent() {
-    let classId = this.studentCategory.controls['classRoomId'].value;
+    let classId = this.studentMarks.controls['classRoomId'].value;
     this._apiService.getStudentsByClass(classId).subscribe(
       {
         next: (response) => {
@@ -127,8 +142,20 @@ export class ExamMarksEntryComponent implements OnInit {
   }
 
   saveStudentMarks() {
-    let studentMarks = this.marks.value;
-    console.log(studentMarks);
+    let studentMarks: SubjectMarkDto = this.studentMarks.value;
+    let theoryPracticalCommon = studentMarks.studentMarksLists.forEach(x => {
+      
+    })
+    this._apiService.postStudentMarks(studentMarks).subscribe(
+      {
+        next: (response) => {
 
+        },
+        error: (err) => {
+
+        },
+        complete: () => console.log("Req is completed")
+      }
+    )
   }
 }
